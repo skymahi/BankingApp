@@ -1,0 +1,11 @@
+<div>
+  <h3>Account Balance: {{ accountBalance | currency }}</h3>
+  <div>
+    <input type="number" [(ngModel)]="depositAmount" placeholder="Amount to Deposit" />
+    <button (click)="onDeposit()">Deposit</button>
+  </div>
+  <div>
+    <input type="number" [(ngModel)]="withdrawAmount" placeholder="Amount to Withdraw" />
+    <button (click)="onWithdraw()">Withdraw</button>
+  </div>
+</div>
